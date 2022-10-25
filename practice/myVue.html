@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            .box {
+                width: 400px;
+                height: 400px;
+                background: green;
+            }
+            .s-box {
+                width: 100px;
+                height: 100px;
+                margin: 30px;
+                background: red;
+            }
+            .box1 {
+                width: 10px;
+                height: 10px;
+                border: 1px solid black;
+                padding: 2px;
+                margin: 5px;
+                background: blue;
+            }
+            .border-box {
+                box-sizing: border-box;
+            }
+            .content-box {
+                box-sizing: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <h3>数据的双向绑定</h3>
+            <div class="cell">
+                <div class="text" v-text="form.myText"></div>
+                <input class="input" type="text" v-model="form.myText" >
+            </div>
+        </div>
+        <div class="box1 border-box"></div>
+        <div class="box1 content-box"></div>
+    </body>
+    <!-- <script src="./myVue.js"></script> -->
+</html>
